@@ -47,6 +47,7 @@ public class UsuarioService {
 				user.get().setToken(authHeader);	
 				user.get().setNome(usuario.get().getNome());
 				user.get().setSenha(usuario.get().getSenha());
+				user.get().setTipoUsuario(usuario.get().getTipoUsuario());
 				
 				return user;
 			}

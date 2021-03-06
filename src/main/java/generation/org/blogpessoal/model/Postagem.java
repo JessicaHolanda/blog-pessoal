@@ -1,4 +1,4 @@
-package org.generation.blogpessoal.model;
+package generation.org.blogpessoal.model;
 
 import java.util.Date;
 

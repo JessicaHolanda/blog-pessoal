@@ -1,4 +1,4 @@
-package org.generation.blogpessoal;
+package generation.org.blogpessoal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

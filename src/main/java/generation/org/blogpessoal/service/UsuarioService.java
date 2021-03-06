@@ -1,16 +1,16 @@
-package org.generation.blogpessoal.service;
+package generation.org.blogpessoal.service;
 
 import java.nio.charset.Charset;
 import java.util.Optional;
 
 import org.apache.commons.codec.binary.Base64;
-
-import org.generation.blogpessoal.model.UserLogin;
-import org.generation.blogpessoal.model.Usuario;
-import org.generation.blogpessoal.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import generation.org.blogpessoal.model.UserLogin;
+import generation.org.blogpessoal.model.Usuario;
+import generation.org.blogpessoal.repository.UsuarioRepository;
 
 @Service
 public class UsuarioService {
@@ -47,7 +47,7 @@ public class UsuarioService {
 				user.get().setToken(authHeader);	
 				user.get().setNome(usuario.get().getNome());
 				user.get().setSenha(usuario.get().getSenha());
-				user.get().setTipoUsuario(usuario.get().getTipoUsuario());
+				//user.get().setTipoUsuario(usuario.get().getTipoUsuario());
 				
 				return user;
 			}

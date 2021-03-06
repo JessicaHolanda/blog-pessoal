@@ -1,4 +1,4 @@
-package org.generation.blogpessoal.model;
+package generation.org.blogpessoal.model;
 
 public class UserLogin {
 
@@ -10,8 +10,6 @@ public class UserLogin {
 	
 	private String token;
 	
-	private String tipoUsuario;
-
 	public String getNome() {
 		return nome;
 	}
@@ -44,13 +42,4 @@ public class UserLogin {
 		this.token = token;
 	}
 
-	public String getTipoUsuario() {
-		return tipoUsuario;
-	}
-
-	public void setTipoUsuario(String tipoUsuario) {
-		this.tipoUsuario = tipoUsuario;
-	}
-	
-	
 }

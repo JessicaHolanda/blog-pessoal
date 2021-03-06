@@ -1,10 +1,7 @@
-package org.generation.blogpessoal.controller;
+package generation.org.blogpessoal.controller;
 
 import java.util.Optional;
 
-import org.generation.blogpessoal.model.UserLogin;
-import org.generation.blogpessoal.model.Usuario;
-import org.generation.blogpessoal.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,9 +11,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import generation.org.blogpessoal.model.UserLogin;
+import generation.org.blogpessoal.model.Usuario;
+import generation.org.blogpessoal.service.UsuarioService;
+import io.swagger.annotations.Api;
+
 @RestController
 @RequestMapping("/usuarios")
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin("*")
+@Api(value="API REST Usuario")
 public class UsuarioController {
 	
 	@Autowired
